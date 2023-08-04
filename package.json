@@ -1,0 +1,25 @@
+{
+	"name": "getwid-megamenu",
+	"version": "1.0.0",
+	"private": true,
+	"description": "WordPress Mega Menu Block",
+	"author": "MotoPress",
+	"license": "GPL-2.0-or-later",
+	"keywords": [
+		"WordPress",
+		"block"
+	],
+	"main": "build/index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^12.1.0"
+	},
+	"scripts": {
+		"start": "wp-scripts start src/index.js src/frontend.js",
+		"build": "wp-scripts build src/index.js src/frontend.js",
+		"format:js": "wp-scripts format-js",
+		"lint:js": "wp-scripts lint-js"
+	},
+	"dependencies": {
+		"classnames": "^2.2.6"
+	}
+}
